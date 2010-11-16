@@ -1,0 +1,100 @@
+#carousel {  
+    width:960px;  
+    height:540px;     
+    margin:20px auto;  
+}  
+
+.loading
+{
+	padding: 237px 447px;
+}
+  
+#slides {  
+    overflow:hidden; 
+     border: 1px solid black;
+    /* fix ie overflow issue */  
+    position:relative;  
+    width:960px;  
+    height:540px;  
+    z-index: 1000;
+}  
+  
+#slides ul {  
+    position:relative;  
+    left:0;  
+    top:0;  
+    list-style:none;  
+    margin:0;  
+    padding:0;   
+    z-index: 2000;
+}  
+  
+#slides li {  
+    width:960px;  
+    height:540px;     
+    float:left;  
+}  
+  
+#slides li img {  
+    padding: 0px;  
+} 
+
+#info {
+	background-color: #E9138B;
+	width: 300px;
+	height: 80px;
+	position: relative;
+	bottom: 160px;
+	left: 50px;
+	padding: 10px;
+	z-index: 3000;
+	display: none;
+	overflow: hidden;
+} 
+
+#info h1 {
+	font: 1.25em Georgia, serif;
+	color: white;
+}
+
+#info p {
+	font: .875em Georgia, serif;
+	color: white;
+}
+  
+/* hover buttons */
+/* buttons are 38px wide, 179px tall */
+
+.hover {
+	cursor: pointer;
+	cursor: hand;
+}
+#hover_next_button, #hover_prev_button {
+position: absolute;
+height: 179px;
+background-repeat: no-repeat;
+display: none;
+overflow: hidden;
+width: 38px;
+top: 130px;
+z-index: 6000;
+/* background-color: red; */
+/* float: left; */
+}
+
+#hover_next_button {
+background-image: url(../images/hover_next.png);
+background-position: 50px 50px;
+padding: 50px 0px 50px 50px;
+right: 0;
+}
+#hover_prev_button {
+background-image: url(../images/hover_prev.png);
+background-position: 0px 50px;
+padding: 50px 50px 50px 0px;
+left: 0;
+}
+
+/*-- end next & prev buttons --*/  
+  
+.clear {clear:both}  
