@@ -85,12 +85,14 @@ z-index: 6000;
 #hover_next_button {
 background-image: url(../images/hover_next.png);
 background-position: 50px 50px;
+/* background-color: red; */
 padding: 50px 0px 50px 50px;
 right: 0;
 }
 #hover_prev_button {
 background-image: url(../images/hover_prev.png);
 background-position: 0px 50px;
+/* background-color: red; */
 padding: 50px 50px 50px 0px;
 left: 0;
 }

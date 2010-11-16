@@ -61,7 +61,8 @@ function buttonSetup()
 			$(this).css("display", "block")
 		});
 		
-	$('#hover_prev_button').hover(function() 
+	/*
+$('#hover_prev_button').hover(function() 
 		{
 			$("#hover_prev_button").stop().fadeTo("fast", 0.95);
 		}, function() 
@@ -75,6 +76,7 @@ function buttonSetup()
 		{
 			$("#hover_next_button").stop().fadeTo("fast", 0.00);
 		}); 
+*/
 }
 
 function showData()
@@ -145,9 +147,13 @@ function startCarousel() {
         
         function() {
             clearInterval(run);
+            $("#hover_prev_button").stop().fadeTo("fast", 0.95);
+            $("#hover_next_button").stop().fadeTo("fast", 0.95);
         }, 
         function() {
             run = setInterval('rotate()', speed);    
+            $("#hover_prev_button").stop().fadeTo("fast", 0);
+            $("#hover_next_button").stop().fadeTo("fast", 0);
         }
     ); 
         
